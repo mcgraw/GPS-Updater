@@ -1,0 +1,53 @@
+// !$*UTF8*$!
+{
+	63A5A73211D87F10002BC8F9 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 63A5A74111D87F10002BC8F9 /* GPS-Updater */;
+		activeTarget = 63A5A73E11D87F10002BC8F9 /* GPS-Updater */;
+		codeSenseManager = 63A5A73611D87F10002BC8F9 /* Code sense */;
+		executables = (
+			63A5A74111D87F10002BC8F9 /* GPS-Updater */,
+		);
+		ignoreBreakpointsInProjectsDict = {
+		};
+		userBuildSettings = {
+		};
+	};
+	63A5A73611D87F10002BC8F9 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	63A5A73E11D87F10002BC8F9 /* GPS-Updater */ = {
+		activeExec = 0;
+		executables = (
+			63A5A74111D87F10002BC8F9 /* GPS-Updater */,
+		);
+	};
+	63A5A74111D87F10002BC8F9 /* GPS-Updater */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "GPS-Updater";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+}

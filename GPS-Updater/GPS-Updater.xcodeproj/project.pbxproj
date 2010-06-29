@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63A5A74311D87F10002BC8F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A5A74211D87F10002BC8F9 /* UIKit.framework */; };
+		63A5A74511D87F10002BC8F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A5A74411D87F10002BC8F9 /* Foundation.framework */; };
+		63A5A74711D87F10002BC8F9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A5A74611D87F10002BC8F9 /* CoreGraphics.framework */; };
+		63A5A74C11D87F10002BC8F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63A5A74A11D87F10002BC8F9 /* InfoPlist.strings */; };
+		63A5A74E11D87F10002BC8F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A5A74D11D87F10002BC8F9 /* main.m */; };
+		63A5A75111D87F10002BC8F9 /* GPS_UpdaterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A5A75011D87F10002BC8F9 /* GPS_UpdaterAppDelegate.m */; };
+		63A5A75411D87F10002BC8F9 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63A5A75211D87F10002BC8F9 /* MainWindow.xib */; };
+		63A5A75711D87F10002BC8F9 /* GPS_UpdaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A5A75611D87F10002BC8F9 /* GPS_UpdaterViewController.m */; };
+		63A5A75A11D87F10002BC8F9 /* GPS_UpdaterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63A5A75811D87F10002BC8F9 /* GPS_UpdaterViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		63A5A73F11D87F10002BC8F9 /* GPS-Updater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPS-Updater.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A5A74211D87F10002BC8F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		63A5A74411D87F10002BC8F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		63A5A74611D87F10002BC8F9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		63A5A74811D87F10002BC8F9 /* GPS_Updater-Info.plist */ = {isa = PBXFileReference; path = "GPS_Updater-Info.plist"; sourceTree = "<group>"; };
+		63A5A74911D87F10002BC8F9 /* GPS_Updater_Prefix.pch */ = {isa = PBXFileReference; path = GPS_Updater_Prefix.pch; sourceTree = "<group>"; };
+		63A5A74B11D87F10002BC8F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		63A5A74D11D87F10002BC8F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63A5A74F11D87F10002BC8F9 /* GPS_UpdaterAppDelegate.h */ = {isa = PBXFileReference; path = GPS_UpdaterAppDelegate.h; sourceTree = "<group>"; };
+		63A5A75011D87F10002BC8F9 /* GPS_UpdaterAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPS_UpdaterAppDelegate.m; sourceTree = "<group>"; };
+		63A5A75311D87F10002BC8F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		63A5A75511D87F10002BC8F9 /* GPS_UpdaterViewController.h */ = {isa = PBXFileReference; path = GPS_UpdaterViewController.h; sourceTree = "<group>"; };
+		63A5A75611D87F10002BC8F9 /* GPS_UpdaterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPS_UpdaterViewController.m; sourceTree = "<group>"; };
+		63A5A75911D87F10002BC8F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GPS_UpdaterViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63A5A73C11D87F10002BC8F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A5A74311D87F10002BC8F9 /* UIKit.framework in Frameworks */,
+				63A5A74511D87F10002BC8F9 /* Foundation.framework in Frameworks */,
+				63A5A74711D87F10002BC8F9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63A5A73011D87F10002BC8F9 = {
+			isa = PBXGroup;
+			children = (
+				63A5A73711D87F10002BC8F9 /* Classes */,
+				63A5A73811D87F10002BC8F9 /* Other Sources */,
+				63A5A73911D87F10002BC8F9 /* Resources */,
+				63A5A73A11D87F10002BC8F9 /* Frameworks */,
+				63A5A74011D87F10002BC8F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63A5A73711D87F10002BC8F9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				63A5A74F11D87F10002BC8F9 /* GPS_UpdaterAppDelegate.h */,
+				63A5A75011D87F10002BC8F9 /* GPS_UpdaterAppDelegate.m */,
+				63A5A75511D87F10002BC8F9 /* GPS_UpdaterViewController.h */,
+				63A5A75611D87F10002BC8F9 /* GPS_UpdaterViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		63A5A73811D87F10002BC8F9 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				63A5A74911D87F10002BC8F9 /* GPS_Updater_Prefix.pch */,
+				63A5A74D11D87F10002BC8F9 /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		63A5A73911D87F10002BC8F9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63A5A74811D87F10002BC8F9 /* GPS_Updater-Info.plist */,
+				63A5A74A11D87F10002BC8F9 /* InfoPlist.strings */,
+				63A5A75211D87F10002BC8F9 /* MainWindow.xib */,
+				63A5A75811D87F10002BC8F9 /* GPS_UpdaterViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		63A5A73A11D87F10002BC8F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63A5A74211D87F10002BC8F9 /* UIKit.framework */,
+				63A5A74411D87F10002BC8F9 /* Foundation.framework */,
+				63A5A74611D87F10002BC8F9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63A5A74011D87F10002BC8F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63A5A73F11D87F10002BC8F9 /* GPS-Updater.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63A5A73E11D87F10002BC8F9 /* GPS-Updater */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63A5A75D11D87F10002BC8F9 /* Build configuration list for PBXNativeTarget "GPS-Updater" */;
+			buildPhases = (
+				63A5A73B11D87F10002BC8F9 /* Sources */,
+				63A5A73C11D87F10002BC8F9 /* Frameworks */,
+				63A5A73D11D87F10002BC8F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GPS-Updater";
+			productName = "GPS-Updater";
+			productReference = 63A5A73F11D87F10002BC8F9 /* GPS-Updater.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63A5A73211D87F10002BC8F9 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 63A5A73511D87F10002BC8F9 /* Build configuration list for PBXProject "GPS-Updater" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 63A5A73011D87F10002BC8F9;
+			productRefGroup = 63A5A74011D87F10002BC8F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63A5A73E11D87F10002BC8F9 /* GPS-Updater */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63A5A73D11D87F10002BC8F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A5A74C11D87F10002BC8F9 /* InfoPlist.strings in Resources */,
+				63A5A75411D87F10002BC8F9 /* MainWindow.xib in Resources */,
+				63A5A75A11D87F10002BC8F9 /* GPS_UpdaterViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63A5A73B11D87F10002BC8F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A5A74E11D87F10002BC8F9 /* main.m in Sources */,
+				63A5A75111D87F10002BC8F9 /* GPS_UpdaterAppDelegate.m in Sources */,
+				63A5A75711D87F10002BC8F9 /* GPS_UpdaterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		63A5A74A11D87F10002BC8F9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63A5A74B11D87F10002BC8F9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		63A5A75211D87F10002BC8F9 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63A5A75311D87F10002BC8F9 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		63A5A75811D87F10002BC8F9 /* GPS_UpdaterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63A5A75911D87F10002BC8F9 /* en */,
+			);
+			name = GPS_UpdaterViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63A5A75B11D87F10002BC8F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Debug;
+		};
+		63A5A75C11D87F10002BC8F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Release;
+		};
+		63A5A75E11D87F10002BC8F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GPS_Updater_Prefix.pch;
+				INFOPLIST_FILE = "GPS_Updater-Info.plist";
+				PRODUCT_NAME = "GPS-Updater";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		63A5A75F11D87F10002BC8F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GPS_Updater_Prefix.pch;
+				INFOPLIST_FILE = "GPS_Updater-Info.plist";
+				PRODUCT_NAME = "GPS-Updater";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63A5A73511D87F10002BC8F9 /* Build configuration list for PBXProject "GPS-Updater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A5A75B11D87F10002BC8F9 /* Debug */,
+				63A5A75C11D87F10002BC8F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63A5A75D11D87F10002BC8F9 /* Build configuration list for PBXNativeTarget "GPS-Updater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A5A75E11D87F10002BC8F9 /* Debug */,
+				63A5A75F11D87F10002BC8F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63A5A73211D87F10002BC8F9 /* Project object */;
+}

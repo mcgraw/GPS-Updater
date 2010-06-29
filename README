@@ -1,0 +1,36 @@
+* * * * * * * * * * * * * * * * * * * * * * * * *
+* GPS Updater for iOS Devices
+* 
+* Code: David McGraw                      6.27.10
+* * * * * * * * * * * * * * * * * * * * * * * * * 
+
+ABOUT
+-----
+GPS Updater will post GPS data to an outside script 
+of the users choice.
+
+For devices which support multitasking the user will 
+be able to set an interval at which the posts will occur.
+
+For those with devices without multitasking, the 
+user can manually post that data.
+
+OPTIONS
+-------
+The user will have the option to post these variables
+to a custom website/script.
+
+	longitude
+	latitude
+	altitude
+	userid
+	
+    FORMAT
+	------
+
+	http://www.your-domain.com/gpupdate.php?lat=00.0&long=00.00&alt=00&userid=00
+
+QUESTIONS
+---------
+Should there be any questions about how this application is
+used, feel free to get in touch.
