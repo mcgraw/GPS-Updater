@@ -1,28 +1,24 @@
 //
-//  GPS_UpdaterAppDelegate.m
+//  GPSAppDelegate.m
 //  GPS-Updater
 //
 //  Created by David McGraw on 6/27/10.
 //
 
 
-#import "GPS_UpdaterAppDelegate.h"
+#import "GPSAppDelegate.h"
+#import "GPSViewController.h"
 
-#import "GPS_UpdaterViewController.h"
-
-@implementation GPS_UpdaterAppDelegate
-
+@implementation GPSAppDelegate
 
 @synthesize window;
-
 @synthesize viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    // Override point for customization after application launch.
-    // Override point for customization after app launch. 
     [window addSubview:viewController.view];
     [window makeKeyAndVisible];
+    
     return YES;
 }
 
@@ -33,8 +29,8 @@
 
 - (void)dealloc {
 
-    [window release];
-    [viewController release];
+    //[window release];
+    //[viewController release];
     [super dealloc];
 }
 

@@ -7,32 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		639B35A411D9C73A006F2410 /* GPSData.m in Sources */ = {isa = PBXBuildFile; fileRef = 639B35A311D9C73A006F2410 /* GPSData.m */; };
+		639B35A611D9C828006F2410 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639B35A511D9C828006F2410 /* CoreLocation.framework */; };
 		63A5A74311D87F10002BC8F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A5A74211D87F10002BC8F9 /* UIKit.framework */; };
 		63A5A74511D87F10002BC8F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A5A74411D87F10002BC8F9 /* Foundation.framework */; };
 		63A5A74711D87F10002BC8F9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A5A74611D87F10002BC8F9 /* CoreGraphics.framework */; };
 		63A5A74C11D87F10002BC8F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63A5A74A11D87F10002BC8F9 /* InfoPlist.strings */; };
 		63A5A74E11D87F10002BC8F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A5A74D11D87F10002BC8F9 /* main.m */; };
-		63A5A75111D87F10002BC8F9 /* GPS_UpdaterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A5A75011D87F10002BC8F9 /* GPS_UpdaterAppDelegate.m */; };
+		63A5A75111D87F10002BC8F9 /* GPSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A5A75011D87F10002BC8F9 /* GPSAppDelegate.m */; };
 		63A5A75411D87F10002BC8F9 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63A5A75211D87F10002BC8F9 /* MainWindow.xib */; };
-		63A5A75711D87F10002BC8F9 /* GPS_UpdaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A5A75611D87F10002BC8F9 /* GPS_UpdaterViewController.m */; };
-		63A5A75A11D87F10002BC8F9 /* GPS_UpdaterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63A5A75811D87F10002BC8F9 /* GPS_UpdaterViewController.xib */; };
+		63A5A75711D87F10002BC8F9 /* GPSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A5A75611D87F10002BC8F9 /* GPSViewController.m */; };
+		63A5A75A11D87F10002BC8F9 /* GPSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63A5A75811D87F10002BC8F9 /* GPSViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		63A5A73F11D87F10002BC8F9 /* GPS-Updater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPS-Updater.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		639B35A211D9C73A006F2410 /* GPSData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSData.h; sourceTree = "<group>"; };
+		639B35A311D9C73A006F2410 /* GPSData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSData.m; sourceTree = "<group>"; };
+		639B35A511D9C828006F2410 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		63A5A73F11D87F10002BC8F9 /* GPS_Updater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPS_Updater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A5A74211D87F10002BC8F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		63A5A74411D87F10002BC8F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		63A5A74611D87F10002BC8F9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		63A5A74811D87F10002BC8F9 /* GPS_Updater-Info.plist */ = {isa = PBXFileReference; path = "GPS_Updater-Info.plist"; sourceTree = "<group>"; };
-		63A5A74911D87F10002BC8F9 /* GPS_Updater_Prefix.pch */ = {isa = PBXFileReference; path = GPS_Updater_Prefix.pch; sourceTree = "<group>"; };
+		63A5A74811D87F10002BC8F9 /* GPS_Updater-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPS_Updater-Info.plist"; sourceTree = "<group>"; };
+		63A5A74911D87F10002BC8F9 /* GPSPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSPrefix.pch; sourceTree = "<group>"; };
 		63A5A74B11D87F10002BC8F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		63A5A74D11D87F10002BC8F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		63A5A74F11D87F10002BC8F9 /* GPS_UpdaterAppDelegate.h */ = {isa = PBXFileReference; path = GPS_UpdaterAppDelegate.h; sourceTree = "<group>"; };
-		63A5A75011D87F10002BC8F9 /* GPS_UpdaterAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPS_UpdaterAppDelegate.m; sourceTree = "<group>"; };
+		63A5A74F11D87F10002BC8F9 /* GPSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GPSAppDelegate.h; path = Classes/GPSAppDelegate.h; sourceTree = "<group>"; };
+		63A5A75011D87F10002BC8F9 /* GPSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GPSAppDelegate.m; path = Classes/GPSAppDelegate.m; sourceTree = "<group>"; };
 		63A5A75311D87F10002BC8F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		63A5A75511D87F10002BC8F9 /* GPS_UpdaterViewController.h */ = {isa = PBXFileReference; path = GPS_UpdaterViewController.h; sourceTree = "<group>"; };
-		63A5A75611D87F10002BC8F9 /* GPS_UpdaterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPS_UpdaterViewController.m; sourceTree = "<group>"; };
-		63A5A75911D87F10002BC8F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GPS_UpdaterViewController.xib; sourceTree = "<group>"; };
+		63A5A75511D87F10002BC8F9 /* GPSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSViewController.h; sourceTree = "<group>"; };
+		63A5A75611D87F10002BC8F9 /* GPSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPSViewController.m; sourceTree = "<group>"; };
+		63A5A75911D87F10002BC8F9 /* GPSViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GPSViewController.xib; path = en.lproj/GPSViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,12 +48,29 @@
 				63A5A74311D87F10002BC8F9 /* UIKit.framework in Frameworks */,
 				63A5A74511D87F10002BC8F9 /* Foundation.framework in Frameworks */,
 				63A5A74711D87F10002BC8F9 /* CoreGraphics.framework in Frameworks */,
+				639B35A611D9C828006F2410 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		639B358D11D9C0BC006F2410 /* gps objects */ = {
+			isa = PBXGroup;
+			children = (
+				639B35A211D9C73A006F2410 /* GPSData.h */,
+				639B35A311D9C73A006F2410 /* GPSData.m */,
+			);
+			name = "gps objects";
+			sourceTree = "<group>";
+		};
+		639B35B011D9CC27006F2410 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = tests;
+			sourceTree = "<group>";
+		};
 		63A5A73011D87F10002BC8F9 = {
 			isa = PBXGroup;
 			children = (
@@ -63,10 +85,10 @@
 		63A5A73711D87F10002BC8F9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				63A5A74F11D87F10002BC8F9 /* GPS_UpdaterAppDelegate.h */,
-				63A5A75011D87F10002BC8F9 /* GPS_UpdaterAppDelegate.m */,
-				63A5A75511D87F10002BC8F9 /* GPS_UpdaterViewController.h */,
-				63A5A75611D87F10002BC8F9 /* GPS_UpdaterViewController.m */,
+				639B35B011D9CC27006F2410 /* tests */,
+				639B358D11D9C0BC006F2410 /* gps objects */,
+				63A5A75511D87F10002BC8F9 /* GPSViewController.h */,
+				63A5A75611D87F10002BC8F9 /* GPSViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -74,7 +96,9 @@
 		63A5A73811D87F10002BC8F9 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				63A5A74911D87F10002BC8F9 /* GPS_Updater_Prefix.pch */,
+				63A5A75011D87F10002BC8F9 /* GPSAppDelegate.m */,
+				63A5A74F11D87F10002BC8F9 /* GPSAppDelegate.h */,
+				63A5A74911D87F10002BC8F9 /* GPSPrefix.pch */,
 				63A5A74D11D87F10002BC8F9 /* main.m */,
 			);
 			name = "Other Sources";
@@ -86,7 +110,7 @@
 				63A5A74811D87F10002BC8F9 /* GPS_Updater-Info.plist */,
 				63A5A74A11D87F10002BC8F9 /* InfoPlist.strings */,
 				63A5A75211D87F10002BC8F9 /* MainWindow.xib */,
-				63A5A75811D87F10002BC8F9 /* GPS_UpdaterViewController.xib */,
+				63A5A75811D87F10002BC8F9 /* GPSViewController.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -94,6 +118,7 @@
 		63A5A73A11D87F10002BC8F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				639B35A511D9C828006F2410 /* CoreLocation.framework */,
 				63A5A74211D87F10002BC8F9 /* UIKit.framework */,
 				63A5A74411D87F10002BC8F9 /* Foundation.framework */,
 				63A5A74611D87F10002BC8F9 /* CoreGraphics.framework */,
@@ -104,7 +129,7 @@
 		63A5A74011D87F10002BC8F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				63A5A73F11D87F10002BC8F9 /* GPS-Updater.app */,
+				63A5A73F11D87F10002BC8F9 /* GPS_Updater.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,7 +151,7 @@
 			);
 			name = "GPS-Updater";
 			productName = "GPS-Updater";
-			productReference = 63A5A73F11D87F10002BC8F9 /* GPS-Updater.app */;
+			productReference = 63A5A73F11D87F10002BC8F9 /* GPS_Updater.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -154,7 +179,7 @@
 			files = (
 				63A5A74C11D87F10002BC8F9 /* InfoPlist.strings in Resources */,
 				63A5A75411D87F10002BC8F9 /* MainWindow.xib in Resources */,
-				63A5A75A11D87F10002BC8F9 /* GPS_UpdaterViewController.xib in Resources */,
+				63A5A75A11D87F10002BC8F9 /* GPSViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,8 +191,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				63A5A74E11D87F10002BC8F9 /* main.m in Sources */,
-				63A5A75111D87F10002BC8F9 /* GPS_UpdaterAppDelegate.m in Sources */,
-				63A5A75711D87F10002BC8F9 /* GPS_UpdaterViewController.m in Sources */,
+				63A5A75111D87F10002BC8F9 /* GPSAppDelegate.m in Sources */,
+				63A5A75711D87F10002BC8F9 /* GPSViewController.m in Sources */,
+				639B35A411D9C73A006F2410 /* GPSData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,12 +216,12 @@
 			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
-		63A5A75811D87F10002BC8F9 /* GPS_UpdaterViewController.xib */ = {
+		63A5A75811D87F10002BC8F9 /* GPSViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				63A5A75911D87F10002BC8F9 /* en */,
+				63A5A75911D87F10002BC8F9 /* GPSViewController.xib */,
 			);
-			name = GPS_UpdaterViewController.xib;
+			name = GPSViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -237,9 +263,9 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GPS_Updater_Prefix.pch;
+				GCC_PREFIX_HEADER = GPSPrefix.pch;
 				INFOPLIST_FILE = "GPS_Updater-Info.plist";
-				PRODUCT_NAME = "GPS-Updater";
+				PRODUCT_NAME = GPS_Updater;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -250,9 +276,9 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GPS_Updater_Prefix.pch;
+				GCC_PREFIX_HEADER = GPSPrefix.pch;
 				INFOPLIST_FILE = "GPS_Updater-Info.plist";
-				PRODUCT_NAME = "GPS-Updater";
+				PRODUCT_NAME = GPS_Updater;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
