@@ -6,6 +6,8 @@
 	<dict>
 		<key>GPS-Updater.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
@@ -15,6 +17,10 @@
 		<key>GPS-Updater.app</key>
 		<true/>
 		<key>GPS.app</key>
+		<true/>
+		<key>GPSTestBundle.octest</key>
+		<true/>
+		<key>GPSTests.octest</key>
 		<true/>
 		<key>GPS_Updater.app</key>
 		<true/>

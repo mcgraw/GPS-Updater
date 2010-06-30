@@ -10,7 +10,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.GDB">
       <BuildableProductRunnable>
          <BuildableProductReference
-            BuildableProductIdentifier = "GPS-Updater.app">
+            BuildableProductIdentifier = "GPS_Updater.app">
          </BuildableProductReference>
 />
       </BuildableProductRunnable>

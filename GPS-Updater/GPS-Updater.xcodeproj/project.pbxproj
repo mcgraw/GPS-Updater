@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		635F07F211DAC817000AAF5E /* GPSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 635F07F111DAC817000AAF5E /* GPSTests.m */; };
+		635F080311DACADE000AAF5E /* GPSData.m in Sources */ = {isa = PBXBuildFile; fileRef = 639B35A311D9C73A006F2410 /* GPSData.m */; };
 		639B35A411D9C73A006F2410 /* GPSData.m in Sources */ = {isa = PBXBuildFile; fileRef = 639B35A311D9C73A006F2410 /* GPSData.m */; };
 		639B35A611D9C828006F2410 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639B35A511D9C828006F2410 /* CoreLocation.framework */; };
 		63A5A74311D87F10002BC8F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A5A74211D87F10002BC8F9 /* UIKit.framework */; };
@@ -20,7 +22,20 @@
 		63A5A75A11D87F10002BC8F9 /* GPSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63A5A75811D87F10002BC8F9 /* GPSViewController.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		635F07EB11DAC7D0000AAF5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63A5A73211D87F10002BC8F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 635F072F11DABF3E000AAF5E;
+			remoteInfo = GPSTestBundle;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		635F073011DABF3E000AAF5E /* GPSTestBundle.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPSTestBundle.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		635F073111DABF3E000AAF5E /* GPSTestBundle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPSTestBundle-Info.plist"; sourceTree = "<group>"; };
+		635F07F111DAC817000AAF5E /* GPSTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSTests.m; sourceTree = "<group>"; };
 		639B35A211D9C73A006F2410 /* GPSData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSData.h; sourceTree = "<group>"; };
 		639B35A311D9C73A006F2410 /* GPSData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSData.m; sourceTree = "<group>"; };
 		639B35A511D9C828006F2410 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -41,6 +56,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		635F072D11DABF3E000AAF5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63A5A73C11D87F10002BC8F9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -55,38 +77,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		639B358D11D9C0BC006F2410 /* gps objects */ = {
+		639B358D11D9C0BC006F2410 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
 				639B35A211D9C73A006F2410 /* GPSData.h */,
 				639B35A311D9C73A006F2410 /* GPSData.m */,
 			);
-			name = "gps objects";
+			name = Objects;
 			sourceTree = "<group>";
 		};
-		639B35B011D9CC27006F2410 /* tests */ = {
+		639B35B011D9CC27006F2410 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				635F07F111DAC817000AAF5E /* GPSTests.m */,
 			);
-			name = tests;
+			name = Tests;
 			sourceTree = "<group>";
 		};
 		63A5A73011D87F10002BC8F9 = {
 			isa = PBXGroup;
 			children = (
+				63A5A73911D87F10002BC8F9 /* Resources */,
 				63A5A73711D87F10002BC8F9 /* Classes */,
 				63A5A73811D87F10002BC8F9 /* Other Sources */,
-				63A5A73911D87F10002BC8F9 /* Resources */,
 				63A5A73A11D87F10002BC8F9 /* Frameworks */,
 				63A5A74011D87F10002BC8F9 /* Products */,
+				635F073111DABF3E000AAF5E /* GPSTestBundle-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		63A5A73711D87F10002BC8F9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				639B35B011D9CC27006F2410 /* tests */,
-				639B358D11D9C0BC006F2410 /* gps objects */,
+				639B35B011D9CC27006F2410 /* Tests */,
+				639B358D11D9C0BC006F2410 /* Objects */,
 				63A5A75511D87F10002BC8F9 /* GPSViewController.h */,
 				63A5A75611D87F10002BC8F9 /* GPSViewController.m */,
 			);
@@ -107,6 +131,7 @@
 		63A5A73911D87F10002BC8F9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				63FE65B111DADFAF00DE2E82 /* Images */,
 				63A5A74811D87F10002BC8F9 /* GPS_Updater-Info.plist */,
 				63A5A74A11D87F10002BC8F9 /* InfoPlist.strings */,
 				63A5A75211D87F10002BC8F9 /* MainWindow.xib */,
@@ -130,13 +155,39 @@
 			isa = PBXGroup;
 			children = (
 				63A5A73F11D87F10002BC8F9 /* GPS_Updater.app */,
+				635F073011DABF3E000AAF5E /* GPSTestBundle.octest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		63FE65B111DADFAF00DE2E82 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		635F072F11DABF3E000AAF5E /* GPSTestBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 635F073411DABF3E000AAF5E /* Build configuration list for PBXNativeTarget "GPSTestBundle" */;
+			buildPhases = (
+				635F072B11DABF3E000AAF5E /* Resources */,
+				635F072C11DABF3E000AAF5E /* Sources */,
+				635F072D11DABF3E000AAF5E /* Frameworks */,
+				635F072E11DABF3E000AAF5E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPSTestBundle;
+			productName = GPSTestBundle;
+			productReference = 635F073011DABF3E000AAF5E /* GPSTestBundle.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		63A5A73E11D87F10002BC8F9 /* GPS-Updater */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63A5A75D11D87F10002BC8F9 /* Build configuration list for PBXNativeTarget "GPS-Updater" */;
@@ -148,6 +199,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				635F07EC11DAC7D0000AAF5E /* PBXTargetDependency */,
 			);
 			name = "GPS-Updater";
 			productName = "GPS-Updater";
@@ -168,11 +220,19 @@
 			projectRoot = "";
 			targets = (
 				63A5A73E11D87F10002BC8F9 /* GPS-Updater */,
+				635F072F11DABF3E000AAF5E /* GPSTestBundle */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		635F072B11DABF3E000AAF5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63A5A73D11D87F10002BC8F9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,7 +245,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		635F072E11DABF3E000AAF5E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		635F072C11DABF3E000AAF5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				635F080311DACADE000AAF5E /* GPSData.m in Sources */,
+				635F07F211DAC817000AAF5E /* GPSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63A5A73B11D87F10002BC8F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -198,6 +283,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		635F07EC11DAC7D0000AAF5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 635F072F11DABF3E000AAF5E /* GPSTestBundle */;
+			targetProxy = 635F07EB11DAC7D0000AAF5E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		63A5A74A11D87F10002BC8F9 /* InfoPlist.strings */ = {
@@ -227,6 +320,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		635F073211DABF3E000AAF5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "GPSTestBundle-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = GPSTestBundle;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		635F073311DABF3E000AAF5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				INFOPLIST_FILE = "GPSTestBundle-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = GPSTestBundle;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		63A5A75B11D87F10002BC8F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -287,6 +438,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		635F073411DABF3E000AAF5E /* Build configuration list for PBXNativeTarget "GPSTestBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				635F073211DABF3E000AAF5E /* Debug */,
+				635F073311DABF3E000AAF5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		63A5A73511D87F10002BC8F9 /* Build configuration list for PBXProject "GPS-Updater" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

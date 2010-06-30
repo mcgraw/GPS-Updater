@@ -7,7 +7,6 @@
 
 #import "GPSData.h"
 
-
 @implementation GPSData
 
 @synthesize data;
@@ -16,13 +15,22 @@
 #pragma mark Member Functions
 
 - (BOOL)initLocationObject {
-    
-    return NO;
+    locationManager = [[CLLocationManager alloc] init];
+    if(locationManager == Nil) {
+        return NO;
+    }
+    return YES;
 }
 
 - (BOOL)isLocationServicesEnabled {
-    
-    return NO;
+    if(locationManager.locationServicesEnabled == NO) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"locationServicesDisabled" object:Nil];
+        return NO;
+    }
+    else {
+        locationManager.delegate = self;
+    }
+    return YES;
 }
 
 - (BOOL)beginTrackingLocation {
@@ -47,6 +55,13 @@
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)err {
     
     
+}
+
+#pragma mark -
+#pragma mark Memory
+
+- (void)dealloc {
+	[super dealloc];
 }
 
 @end
