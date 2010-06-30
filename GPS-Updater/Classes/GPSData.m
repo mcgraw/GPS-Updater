@@ -14,7 +14,15 @@
 #pragma mark -
 #pragma mark Member Functions
 
+- (void)initData {
+    locationManager = Nil;
+    data.latitude   = 0.00f;
+    data.longitude  = 0.00f;
+    data.altitude   = 0.00f;
+}
+
 - (BOOL)initLocationObject {
+    [self initData];
     locationManager = [[CLLocationManager alloc] init];
     if(locationManager == Nil) {
         return NO;
@@ -33,14 +41,12 @@
     return YES;
 }
 
-- (BOOL)beginTrackingLocation {
-    
-    return NO;
+- (void)startUpdatingLocation {
+    [locationManager startUpdatingLocation];
 }
 
-- (BOOL)stopTrackingLocation {
-    
-    return NO;
+- (void)stopUpdatingLocation:(NSString *)state {
+    [locationManager stopUpdatingLocation];
 }
 
 #pragma mark -
@@ -49,12 +55,22 @@
 - (void)locationManager:(CLLocationManager *)manager
     didUpdateToLocation:(CLLocation *)newLocation
            fromLocation:(CLLocation *)oldLocation {
-    
+    data.latitude  = newLocation.coordinate.latitude;
+    data.longitude = newLocation.coordinate.longitude;
+    data.altitude  = newLocation.altitude;
+    NSLog(@"Location Manager Update:\n\t\tLatitude is %.02f\n\t\tLongitude is %.02f\n\t\tAltitude is %.02f", data.latitude, data.longitude, data.altitude);
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)err {
-    
-    
+    NSLog(@"Location Manager Error: %@", [err description]);
+    if ([err code] != kCLErrorLocationUnknown) {
+        NSString *t = [[NSString alloc] initWithFormat:@"Location manager update error with code %@", [err code]];
+        [self stopUpdatingLocation:t];
+        [t release];
+    }
+    else {
+        // kCLErrorLocationUnknown means the manager was unable to get the location
+    }
 }
 
 #pragma mark -

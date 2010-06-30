@@ -17,17 +17,19 @@ struct GPSLocation {
 @interface GPSData : NSObject <CLLocationManagerDelegate> {
     CLLocationManager *locationManager;
     
-    struct GPSLocation *data;
+    struct GPSLocation data;
 }
 
-@property (nonatomic) struct GPSLocation *data;
+@property (readonly) struct GPSLocation data;
+
+- (void)initData;
 
 - (BOOL)initLocationObject;
 
 - (BOOL)isLocationServicesEnabled;
 
-- (BOOL)beginTrackingLocation;
+- (void)startUpdatingLocation;
 
-- (BOOL)stopTrackingLocation;
+- (void)stopUpdatingLocation:(NSString *)state;
 
 @end

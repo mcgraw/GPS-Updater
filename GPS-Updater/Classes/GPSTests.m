@@ -35,39 +35,18 @@
 #pragma mark -
 #pragma mark Core Tests
 
-/* testInitLocationObject tests if the object was created properly
- * 
+/* testGPSDataObject tests if the data object is created/initialized properly 
+ * 1. Create GPSData object
+ * 3. Check if Long, Lat, Alt are 0
  */
-- (void)testInitLocationObject {
+- (void)testGPSDataObject {
 	NSLog(@"%@ start", self.name);
-	STAssertTrue([gpsDataObject initLocationObject], @"Instance Location not Initialized Properly");
+	STAssertTrue([gpsDataObject initLocationObject], @"Instance location not initialized properly");
+    STAssertEquals(gpsDataObject.data.longitude, 0.00f, @"Data object was not created properly");
+    STAssertEquals(gpsDataObject.data.latitude, 0.00f, @"Data object was not created properly");
+    STAssertEquals(gpsDataObject.data.altitude, 0.00f, @"Data object was not created properly");
 	NSLog(@"%@ end", self.name);
 }
 
-/* testTrackingLocationOn tests if we are receiving updates when service is active
- * 
- */
-- (void)testTrackingLocationOn {
-	NSLog(@"%@ start", self.name);
-	
-    
-	NSLog(@"%@ end", self.name);
-}
-
-/* testTrackingLocationOn tests if we are no longer getting service updates
- * 
- */
-- (void)testTrackingLocationOff {
-	NSLog(@"%@ start", self.name);
-	
-    
-	NSLog(@"%@ end", self.name);
-}
 
 @end
-
-/* Test Methods
- 
-		STAssertThrows
- 
- */
