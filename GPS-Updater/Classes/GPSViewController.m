@@ -32,8 +32,9 @@
 
 - (IBAction)showSettings:(id)sender {
     NSLog(@"Show settings button pressed");
-    //SettingsViewController *settings = [SettingsViewController alloc];
-    //[self presentModalViewController:settings animated:YES];
+    settings = [SettingsViewController alloc];
+    settings.delegate = self;
+    [self presentModalViewController:settings animated:YES];
 }
 
 #pragma mark -
@@ -87,6 +88,10 @@
     self.longitude.text = [NSString stringWithFormat:@"%.02f", gpsData.data.longitude];
     self.latitude.text = [NSString stringWithFormat:@"%.02f", gpsData.data.latitude];
     self.altitude.text = [NSString stringWithFormat:@"%.02f", gpsData.data.altitude];
+}
+
+- (void)dismissSettingsModalView {
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 #pragma mark -

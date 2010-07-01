@@ -7,14 +7,16 @@
 
 #import <UIKit/UIKit.h>
 #import "GPSData.h"
+#import "SettingsViewController.h"
 
-@interface GPSViewController : UIViewController <DataUpdated> {
+@interface GPSViewController : UIViewController <DataUpdated, SettingsDelegate> {
     IBOutlet UILabel *longitude;
     IBOutlet UILabel *latitude;
     IBOutlet UILabel *altitude;
     IBOutlet UILabel *alert;
 
     GPSData *gpsData;
+    SettingsViewController *settings;
 }
 
 @property (retain) IBOutlet UILabel *longitude;
