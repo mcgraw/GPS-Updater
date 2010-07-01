@@ -6,6 +6,7 @@
 //
 
 #import "GPSViewController.h"
+#import "SettingsViewController.h"
 
 @implementation GPSViewController
 
@@ -30,7 +31,9 @@
 }
 
 - (IBAction)showSettings:(id)sender {
-    NSLog(@"Show settings button pressed"); 
+    NSLog(@"Show settings button pressed");
+    //SettingsViewController *settings = [SettingsViewController alloc];
+    //[self presentModalViewController:settings animated:YES];
 }
 
 #pragma mark -

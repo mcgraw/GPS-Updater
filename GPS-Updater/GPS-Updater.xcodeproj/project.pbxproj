@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		635F07F211DAC817000AAF5E /* GPSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 635F07F111DAC817000AAF5E /* GPSTests.m */; };
 		635F080311DACADE000AAF5E /* GPSData.m in Sources */ = {isa = PBXBuildFile; fileRef = 639B35A311D9C73A006F2410 /* GPSData.m */; };
+		637D90F111DC67990021B414 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637D90EF11DC67990021B414 /* SettingsViewController.m */; };
+		637D90F211DC67990021B414 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 637D90F011DC67990021B414 /* SettingsViewController.xib */; };
 		639B35A411D9C73A006F2410 /* GPSData.m in Sources */ = {isa = PBXBuildFile; fileRef = 639B35A311D9C73A006F2410 /* GPSData.m */; };
 		639B35A611D9C828006F2410 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639B35A511D9C828006F2410 /* CoreLocation.framework */; };
 		63A5A74311D87F10002BC8F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A5A74211D87F10002BC8F9 /* UIKit.framework */; };
@@ -19,7 +21,6 @@
 		63A5A75111D87F10002BC8F9 /* GPSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A5A75011D87F10002BC8F9 /* GPSAppDelegate.m */; };
 		63A5A75411D87F10002BC8F9 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63A5A75211D87F10002BC8F9 /* MainWindow.xib */; };
 		63A5A75711D87F10002BC8F9 /* GPSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A5A75611D87F10002BC8F9 /* GPSViewController.m */; };
-		63A5A75A11D87F10002BC8F9 /* GPSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63A5A75811D87F10002BC8F9 /* GPSViewController.xib */; };
 		63E99B9511DC3FBD0050014B /* alert.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E99B9411DC3FBC0050014B /* alert.png */; };
 		63E99B9D11DC3FE80050014B /* alert.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E99B9611DC3FE80050014B /* alert.png */; };
 		63E99B9E11DC3FE80050014B /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E99B9711DC3FE80050014B /* bg.png */; };
@@ -29,6 +30,7 @@
 		63E99BA211DC3FE80050014B /* settings_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E99B9B11DC3FE80050014B /* settings_btn.png */; };
 		63E99BA311DC3FE80050014B /* world_pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E99B9C11DC3FE80050014B /* world_pin.png */; };
 		63E99BA611DC41C80050014B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639B35A511D9C828006F2410 /* CoreLocation.framework */; };
+		63F928AC11DC6BDB008463A5 /* GPSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F928AB11DC6BDB008463A5 /* GPSViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,9 @@
 		635F073011DABF3E000AAF5E /* GPSTestBundle.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPSTestBundle.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		635F073111DABF3E000AAF5E /* GPSTestBundle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPSTestBundle-Info.plist"; sourceTree = "<group>"; };
 		635F07F111DAC817000AAF5E /* GPSTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSTests.m; sourceTree = "<group>"; };
+		637D90EE11DC67990021B414 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = ../SettingsViewController.h; sourceTree = "<group>"; };
+		637D90EF11DC67990021B414 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = ../SettingsViewController.m; sourceTree = "<group>"; };
+		637D90F011DC67990021B414 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		639B35A211D9C73A006F2410 /* GPSData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSData.h; sourceTree = "<group>"; };
 		639B35A311D9C73A006F2410 /* GPSData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSData.m; sourceTree = "<group>"; };
 		639B35A511D9C828006F2410 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -61,7 +66,6 @@
 		63A5A75311D87F10002BC8F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		63A5A75511D87F10002BC8F9 /* GPSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSViewController.h; sourceTree = "<group>"; };
 		63A5A75611D87F10002BC8F9 /* GPSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPSViewController.m; sourceTree = "<group>"; };
-		63A5A75911D87F10002BC8F9 /* GPSViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GPSViewController.xib; path = en.lproj/GPSViewController.xib; sourceTree = "<group>"; };
 		63E99B9411DC3FBC0050014B /* alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alert.png; path = images/alert.png; sourceTree = "<group>"; };
 		63E99B9611DC3FE80050014B /* alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alert.png; path = images/alert.png; sourceTree = "<group>"; };
 		63E99B9711DC3FE80050014B /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = images/bg.png; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 		63E99B9A11DC3FE80050014B /* post_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = post_btn.png; path = images/post_btn.png; sourceTree = "<group>"; };
 		63E99B9B11DC3FE80050014B /* settings_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings_btn.png; path = images/settings_btn.png; sourceTree = "<group>"; };
 		63E99B9C11DC3FE80050014B /* world_pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = world_pin.png; path = images/world_pin.png; sourceTree = "<group>"; };
+		63F928AB11DC6BDB008463A5 /* GPSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPSViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		637D90EA11DC631E0021B414 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63F928AB11DC6BDB008463A5 /* GPSViewController.xib */,
+				637D90F011DC67990021B414 /* SettingsViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		639B358D11D9C0BC006F2410 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +145,8 @@
 				639B358D11D9C0BC006F2410 /* Objects */,
 				63A5A75511D87F10002BC8F9 /* GPSViewController.h */,
 				63A5A75611D87F10002BC8F9 /* GPSViewController.m */,
+				637D90EE11DC67990021B414 /* SettingsViewController.h */,
+				637D90EF11DC67990021B414 /* SettingsViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -149,11 +165,11 @@
 		63A5A73911D87F10002BC8F9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				637D90EA11DC631E0021B414 /* Views */,
 				63FE65B111DADFAF00DE2E82 /* Images */,
 				63A5A74811D87F10002BC8F9 /* GPS_Updater-Info.plist */,
 				63A5A74A11D87F10002BC8F9 /* InfoPlist.strings */,
 				63A5A75211D87F10002BC8F9 /* MainWindow.xib */,
-				63A5A75811D87F10002BC8F9 /* GPSViewController.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -265,7 +281,6 @@
 			files = (
 				63A5A74C11D87F10002BC8F9 /* InfoPlist.strings in Resources */,
 				63A5A75411D87F10002BC8F9 /* MainWindow.xib in Resources */,
-				63A5A75A11D87F10002BC8F9 /* GPSViewController.xib in Resources */,
 				63E99B9511DC3FBD0050014B /* alert.png in Resources */,
 				63E99B9D11DC3FE80050014B /* alert.png in Resources */,
 				63E99B9E11DC3FE80050014B /* bg.png in Resources */,
@@ -274,6 +289,8 @@
 				63E99BA111DC3FE80050014B /* post_btn.png in Resources */,
 				63E99BA211DC3FE80050014B /* settings_btn.png in Resources */,
 				63E99BA311DC3FE80050014B /* world_pin.png in Resources */,
+				637D90F211DC67990021B414 /* SettingsViewController.xib in Resources */,
+				63F928AC11DC6BDB008463A5 /* GPSViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +330,7 @@
 				63A5A75111D87F10002BC8F9 /* GPSAppDelegate.m in Sources */,
 				63A5A75711D87F10002BC8F9 /* GPSViewController.m in Sources */,
 				639B35A411D9C73A006F2410 /* GPSData.m in Sources */,
+				637D90F111DC67990021B414 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,14 +359,6 @@
 				63A5A75311D87F10002BC8F9 /* en */,
 			);
 			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		63A5A75811D87F10002BC8F9 /* GPSViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				63A5A75911D87F10002BC8F9 /* GPSViewController.xib */,
-			);
-			name = GPSViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
