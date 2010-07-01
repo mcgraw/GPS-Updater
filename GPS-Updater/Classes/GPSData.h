@@ -14,13 +14,20 @@ struct GPSLocation {
     float altitude;
 };
 
+@protocol DataUpdated
+- (void)locationDataUpdated;
+@end
+
 @interface GPSData : NSObject <CLLocationManagerDelegate> {
     CLLocationManager *locationManager;
     
     struct GPSLocation data;
+    
+    id<DataUpdated> delegate;
 }
 
 @property (readonly) struct GPSLocation data;
+@property (retain) id<DataUpdated> delegate;
 
 - (void)initData;
 
@@ -30,6 +37,6 @@ struct GPSLocation {
 
 - (void)startUpdatingLocation;
 
-- (void)stopUpdatingLocation:(NSString *)state;
+- (void)stopUpdatingLocation;
 
 @end

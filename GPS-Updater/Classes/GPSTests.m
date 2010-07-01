@@ -41,7 +41,6 @@
  */
 - (void)testGPSDataObject {
 	NSLog(@"%@ start", self.name);
-	STAssertTrue([gpsDataObject initLocationObject], @"Instance location not initialized properly");
     STAssertEquals(gpsDataObject.data.longitude, 0.00f, @"Data object was not created properly");
     STAssertEquals(gpsDataObject.data.latitude, 0.00f, @"Data object was not created properly");
     STAssertEquals(gpsDataObject.data.altitude, 0.00f, @"Data object was not created properly");

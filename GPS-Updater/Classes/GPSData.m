@@ -10,6 +10,7 @@
 @implementation GPSData
 
 @synthesize data;
+@synthesize delegate;
 
 #pragma mark -
 #pragma mark Member Functions
@@ -23,29 +24,37 @@
 
 - (BOOL)initLocationObject {
     [self initData];
+    
     locationManager = [[CLLocationManager alloc] init];
     if(locationManager == Nil) {
         return NO;
     }
+    
+    if(![self isLocationServicesEnabled])
+        return NO;
+    
+    [self startUpdatingLocation];
     return YES;
 }
 
 - (BOOL)isLocationServicesEnabled {
-    if(locationManager.locationServicesEnabled == NO) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"locationServicesDisabled" object:Nil];
+    if([locationManager locationServicesEnabled] == NO) {
         return NO;
     }
     else {
         locationManager.delegate = self;
+        locationManager.desiredAccuracy = [[NSNumber numberWithDouble:kCLLocationAccuracyNearestTenMeters] doubleValue];
     }
     return YES;
 }
 
 - (void)startUpdatingLocation {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"updateStateLabel" object:@"Location Updating"];
     [locationManager startUpdatingLocation];
 }
 
-- (void)stopUpdatingLocation:(NSString *)state {
+- (void)stopUpdatingLocation {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"updateStateLabel" object:@"Location Not Being Updating"];
     [locationManager stopUpdatingLocation];
 }
 
@@ -58,15 +67,14 @@
     data.latitude  = newLocation.coordinate.latitude;
     data.longitude = newLocation.coordinate.longitude;
     data.altitude  = newLocation.altitude;
-    NSLog(@"Location Manager Update:\n\t\tLatitude is %.02f\n\t\tLongitude is %.02f\n\t\tAltitude is %.02f", data.latitude, data.longitude, data.altitude);
+    
+    [delegate locationDataUpdated];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)err {
     NSLog(@"Location Manager Error: %@", [err description]);
     if ([err code] != kCLErrorLocationUnknown) {
-        NSString *t = [[NSString alloc] initWithFormat:@"Location manager update error with code %@", [err code]];
-        [self stopUpdatingLocation:t];
-        [t release];
+        [self stopUpdatingLocation];
     }
     else {
         // kCLErrorLocationUnknown means the manager was unable to get the location
