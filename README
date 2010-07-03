@@ -1,36 +1,40 @@
-* * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * GPS Updater for iOS Devices
 * 
-* Code: David McGraw                      6.27.10
-* * * * * * * * * * * * * * * * * * * * * * * * * 
+* Code: David McGraw                                                    6.27.10
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 
-ABOUT
------
-GPS Updater will post GPS data to an outside script 
-of the users choice.
+Requirements
+------------
+Given a web address and a script, post GPS long, lat, alt and a user id number
 
-For devices which support multitasking the user will 
-be able to set an interval at which the posts will occur.
 
-For those with devices without multitasking, the 
-user can manually post that data.
-
-OPTIONS
+Example
 -------
-The user will have the option to post these variables
-to a custom website/script.
+Given the web address/script:
 
-	longitude
-	latitude
-	altitude
-	userid
-	
-    FORMAT
-	------
+	http://www.your-domain.com/gpsupdate.php
+
+	Post the GPS data like such
 
 	http://www.your-domain.com/gpupdate.php?lat=00.0&long=00.00&alt=00&userid=00
 
-QUESTIONS
+
+Core Requirements
+-----------------
+
+    [x] Allow user to customize web address
+	[x] Allow user to enter in a custom user id number
+	[x] Allow user to POST this data to the given web address
+
+Alternative Enhancements
+------------------------
+
+	[ ] A log of system events
+	[ ] A map which shows where the user has been
+
+Questions
 ---------
-Should there be any questions about how this application is
-used, feel free to get in touch.
+Feel free to get in touch if you have any questions, otherwise, you are free to 
+add to the project as you wish.
+
