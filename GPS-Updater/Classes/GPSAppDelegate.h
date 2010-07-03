@@ -13,12 +13,14 @@
 @interface GPSAppDelegate : NSObject <UIApplicationDelegate> {
 
     UIWindow *window;
-
     GPSViewController *viewController;
+	
+	BOOL backgroundSupported;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet GPSViewController *viewController;
 
+- (BOOL)isBackgroundSupported;
 @end
 

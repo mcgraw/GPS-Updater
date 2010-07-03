@@ -6,11 +6,12 @@
 //
 
 #import "SettingsViewController.h"
-
+#import "StateManager.h"
 
 @implementation SettingsViewController
 
 @synthesize delegate;
+@synthesize stateSettings;
 @synthesize address;
 @synthesize userid;
 
@@ -29,7 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self loadSettingsFromPropertyList];
+    [self setState];
 }
 
 - (void)viewDidUnload {
@@ -37,14 +38,31 @@
 }
 
 #pragma mark -
-#pragma mark State
-- (void)loadSettingsFromPropertyList {
+#pragma mark TextField Delegates
 
-    NSString *path = [[NSBundle mainBundle] pathForResource:kFilename ofType:@"plist"];
-    NSMutableDictionary *temp = [NSMutableDictionary dictionaryWithContentsOfFile:path];
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    if(textField.tag == 0) {
+        // Address Tag
+        [stateSettings saveAddress:[textField text]];
+    }
+    else if(textField.tag == 1) {
+        // UserID Tag
+        [stateSettings saveUserId:[textField text]];
+    }
     
-    self.address.text = [temp valueForKey:@"WebAddress"];
-    self.userid.text  = [NSString stringWithFormat:@"%@", [temp objectForKey:@"UserID"]];
+    [self resignFirstResponder];
+}
+
+#pragma mark -
+#pragma mark State
+- (void)setState {
+    address.text = [stateSettings getAddress];
+    userid.text  = [stateSettings getUserId];
 }
 
 #pragma mark -

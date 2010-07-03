@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
    type = "1">
+   <FileBreakpoints>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "Classes/GPSData.h"
+         timestampString = "299834202.779921"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "22"
+         endingLineNumber = "22"
+         landmarkName = "@interface GPSData"
+         landmarkType = "2">
+      </FileBreakpoint>
+   </FileBreakpoints>
 </Bucket>

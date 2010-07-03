@@ -20,6 +20,7 @@
     data.latitude   = 0.00f;
     data.longitude  = 0.00f;
     data.altitude   = 0.00f;
+	data.userid     = 0;
 }
 
 - (BOOL)initLocationObject {
@@ -56,6 +57,23 @@
 - (void)stopUpdatingLocation {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"updateStateLabel" object:@"Location Not Being Updating"];
     [locationManager stopUpdatingLocation];
+}
+
+- (NSDictionary *)getPostDictionary:(NSDictionary *)userDict {
+	NSMutableDictionary *temp = [[NSMutableDictionary alloc] initWithDictionary:userDict];
+
+	[temp setValue:[NSString stringWithFormat:@"%.02f", data.longitude] forKey:@"long"];
+	[temp setValue:[NSString stringWithFormat:@"%.02f", data.latitude] forKey:@"lat"];
+	[temp setValue:[NSString stringWithFormat:@"%.02f", data.altitude] forKey:@"alt"];
+	[temp setValue:[NSString stringWithFormat:@"%d", data.userid] forKey:@"userid"];
+
+	userDict = [temp copy];
+	[temp release];
+	return userDict;
+}
+
+- (void)setUserId:(int)value {
+	data.userid = value;
 }
 
 #pragma mark -

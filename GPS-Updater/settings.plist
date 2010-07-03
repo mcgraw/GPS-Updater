@@ -5,6 +5,6 @@
 	<key>WebAddress</key>
 	<string>http://www.david-mcgraw.com/gpsinfo.php</string>
 	<key>UserID</key>
-	<integer>1</integer>
+	<string>1</string>
 </dict>
 </plist>

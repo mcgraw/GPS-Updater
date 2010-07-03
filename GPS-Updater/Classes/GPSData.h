@@ -9,6 +9,7 @@
 #import <CoreLocation/CoreLocation.h>
 
 struct GPSLocation {
+	int userid;
     float longitude;
     float latitude;
     float altitude;
@@ -30,13 +31,12 @@ struct GPSLocation {
 @property (retain) id<DataUpdated> delegate;
 
 - (void)initData;
-
 - (BOOL)initLocationObject;
-
 - (BOOL)isLocationServicesEnabled;
-
 - (void)startUpdatingLocation;
-
 - (void)stopUpdatingLocation;
+
+- (NSDictionary *)getPostDictionary:(NSDictionary *)userDict;
+- (void)setUserId:(int)value;
 
 @end

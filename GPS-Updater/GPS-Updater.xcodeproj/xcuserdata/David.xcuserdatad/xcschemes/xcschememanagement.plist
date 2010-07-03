@@ -11,12 +11,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>GPSAppTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>GPS-Updater.app</key>
 		<true/>
 		<key>GPS.app</key>
+		<true/>
+		<key>GPSAppTests.octest</key>
 		<true/>
 		<key>GPSTestBundle.octest</key>
 		<true/>

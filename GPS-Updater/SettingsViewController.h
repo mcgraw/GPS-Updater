@@ -8,25 +8,28 @@
 
 #import <UIKit/UIKit.h>
 
-#define kFilename       @"settings"
-
 @protocol SettingsDelegate <NSObject>
 - (void)dismissSettingsModalView;
 @end
 
-@interface SettingsViewController : UIViewController {
+@class StateManager;
+
+@interface SettingsViewController : UIViewController <UITextFieldDelegate> {
     IBOutlet UITextField *address;
     IBOutlet UITextField *userid;
     
     id <SettingsDelegate> delegate;
+    
+    StateManager *stateSettings;
 }
 
 @property (retain) id <SettingsDelegate> delegate;
+@property (retain) StateManager *stateSettings;
 @property (retain) IBOutlet UITextField *address;
 @property (retain) IBOutlet UITextField *userid;
 
 - (IBAction)closeView:(id)sender;
 
-- (void)loadSettingsFromPropertyList;
+- (void)setState;
 
 @end

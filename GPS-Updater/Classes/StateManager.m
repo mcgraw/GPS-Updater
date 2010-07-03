@@ -36,14 +36,14 @@
 }
 
 - (void)saveAddress:(NSString *)value {
-    NSMutableDictionary *temp = [plistData mutableCopy];
+    NSMutableDictionary *temp = [[NSMutableDictionary alloc] initWithDictionary:plistData];
     [temp setValue:value forKey:kAddressKey];
     plistData = [temp copy];
     [temp release];
 }
 
 - (void)saveUserId:(NSString *)value {
-   NSMutableDictionary *temp = [plistData mutableCopy];
+   NSMutableDictionary *temp = [[NSMutableDictionary alloc] initWithDictionary:plistData];
    [temp setValue:value forKey:kUserIdKey]; 
    plistData = [temp copy];
    [temp release];
