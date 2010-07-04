@@ -18,14 +18,17 @@
 @synthesize alert;
 @synthesize address;
 @synthesize gpsData;
+@synthesize serviceEnabled;
 
 #pragma mark -
 #pragma mark IBAction Methods
 
 - (IBAction)postNewLocation:(id)sender {
     NSLog(@"Post new location button pressed");
-	if([stateSettings.plistData count] == 0)
+	if([stateSettings.plistData count] == 0 || serviceEnabled == NO) {
+		[self updateStateLabel:@"Unable to post! Services disabled?" color:[UIColor redColor]];
 		return;
+	}
 	
 	NSDictionary *temp = [gpsData getPostDictionary:stateSettings.plistData];
 	httpRequest = [HTTPHandler alloc];
@@ -49,26 +52,8 @@
 }
 
 - (IBAction)infoMessage:(id)sender {
-    UIAlertView *alertM = [[UIAlertView alloc] initWithTitle:@"GPS Updater" 
-                                                     message:@"Core Development\nDavid McGraw\ndlmcgraw07@gmail.com\n\nAdditional Development\n\tNobody\n\ngithub.com/mcgraw/GPS-Updater" 
-                                                    delegate: self
-                                           cancelButtonTitle:@"Ok" 
-                                           otherButtonTitles:Nil];
-    [alertM show];
-    [alertM release];
-}
-#pragma mark -
-#pragma mark Notification
-
-- (void)updateStateLabelNotify:(NSNotification *)notification {
-    NSString *state = (NSString *)[notification object];
-    self.alert.text = state;
-    self.alert.textColor = [UIColor greenColor];
-}
-
-- (void)updateStateLabel:(NSString *)value color:(UIColor*)colorval {
-    self.alert.text = value;
-    self.alert.textColor = colorval;
+    [self showAlertWithString:@"GPS Updater"
+					  content:@"Core Development\nDavid McGraw\ndlmcgraw07@gmail.com\n\nAdditional Development\n\tNobody\n\ngithub.com/mcgraw/GPS-Updater"];
 }
 
 #pragma mark -
@@ -76,7 +61,8 @@
 
 - (void)viewDidLoad {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateStateLabelNotify:) name:@"updateStateLabel" object:nil];
-    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showResponseString:) name:@"showResponseString" object:nil];
+	
 	// Get state settings (address, userid)
     if(![self initSavedState]){
         [self updateStateLabel:@"Saved data not found, check settings!" color:[UIColor redColor]];
@@ -86,7 +72,8 @@
     }
 	
     // Initialize GPS object
-    if(![self createGPSObject]){
+	self.serviceEnabled = [self createGPSObject];
+    if(!self.serviceEnabled){
         [self updateStateLabel:@"Location Services Disabled?" color:[UIColor redColor]]; 
         return;
     }
@@ -110,6 +97,21 @@
 	[gpsData setUserId:[[stateSettings getUserId] intValue]];	
 }
 
+- (void)updateStateLabel:(NSString *)value color:(UIColor*)colorval {
+    self.alert.text = value;
+    self.alert.textColor = colorval;
+}
+
+- (void)showAlertWithString:(NSString *)titleMessage content:(NSString *)content {
+	UIAlertView *alertM = [[UIAlertView alloc] initWithTitle:titleMessage
+                                                     message:content
+                                                    delegate: self
+                                           cancelButtonTitle:@"Ok" 
+                                           otherButtonTitles:Nil];
+    [alertM show];
+    [alertM release];
+}
+
 #pragma mark - 
 #pragma mark Processes
 
@@ -128,6 +130,7 @@
     return [stateSettings initStateManager];
 }
 
+
 #pragma mark -
 #pragma mark Delegates
 
@@ -143,6 +146,20 @@
     [self updateAddressLabel];
 	[self updateUserId];
     [self dismissModalViewControllerAnimated:YES];
+}
+
+#pragma mark -
+#pragma mark Notification
+
+- (void)updateStateLabelNotify:(NSNotification *)notification {
+    NSString *state = (NSString *)[notification object];
+    self.alert.text = state;
+}
+
+- (void)showResponseString:(NSNotification *)notification {
+	NSString *response = (NSString *)[notification object];
+	if(response != Nil)
+		[self showAlertWithString:@"Response" content:response];
 }
 
 #pragma mark -

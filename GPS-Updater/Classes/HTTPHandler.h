@@ -32,6 +32,7 @@
 	NSError *error = [request error];
 	if(!error) {
 		NSLog(@"Response String: %@", [request responseString]);
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"showResponseString" object:[request responseString]];
 		return YES;
 	}
 	

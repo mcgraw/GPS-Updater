@@ -20,12 +20,13 @@
     IBOutlet UILabel *address;
 
     GPSData *gpsData;
-	
     SettingsViewController *settings;
-
     StateManager *stateSettings;
-	
 	HTTPHandler *httpRequest;
+	
+	UIActivityIndicatorView *activity;
+	
+	BOOL serviceEnabled;
 }
 
 @property (retain) IBOutlet UILabel *longitude;
@@ -35,6 +36,8 @@
 @property (retain) IBOutlet UILabel *address;
 
 @property (retain) GPSData *gpsData;
+@property BOOL serviceEnabled;
+
 
 // UI Handling
 - (IBAction)postNewLocation:(id)sender;
@@ -45,6 +48,9 @@
 - (IBAction)infoMessage:(id)sender;
 
 - (void)updateAddressLabel;
+- (void)updateStateLabel:(NSString *)value color:(UIColor*)colorval;
+
+- (void)showAlertWithString:(NSString *)titleMessage content:(NSString *)content;
 
 // Data Handling
 - (void)updateUserId;
