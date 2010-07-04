@@ -265,6 +265,7 @@
 							<array>
 								<string>63A5A73011D87F10002BC8F9</string>
 								<string>63A5A73711D87F10002BC8F9</string>
+								<string>639B35B011D9CC27006F2410</string>
 								<string>639B358D11D9C0BC006F2410</string>
 								<string>63A5A73811D87F10002BC8F9</string>
 								<string>63A5A73911D87F10002BC8F9</string>
@@ -276,7 +277,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>11</integer>
+									<integer>12</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -329,7 +330,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6331AED711E0634300C9E384</string>
+										<string>6331AEEA11E064A700C9E384</string>
 										<key>history</key>
 										<array>
 											<string>6331A5D511DF208600C9E384</string>
@@ -344,7 +345,7 @@
 											<string>6331A6EF11DF396000C9E384</string>
 											<string>6331A6F011DF396000C9E384</string>
 											<string>6331A74611DF42A000C9E384</string>
-											<string>6331A74811DF42A000C9E384</string>
+											<string>6331AEDE11E0644E00C9E384</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -373,7 +374,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GPSViewController.h</string>
+								<string>GPSViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -381,28 +382,29 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GPSViewController.h</string>
+										<string>GPSViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6331AEDD11E0634300C9E384</string>
+										<string>6331AEF211E064A700C9E384</string>
 										<key>history</key>
 										<array>
 											<string>63D314EC11DAB09A00AA7FA7</string>
 											<string>6331A5D511DF208600C9E384</string>
 											<string>6331A5FC11DF22F100C9E384</string>
 											<string>6331A5FD11DF22F100C9E384</string>
-											<string>6331A6A811DF317800C9E384</string>
 											<string>6331A6CA11DF331800C9E384</string>
 											<string>6331A6F511DF396000C9E384</string>
 											<string>6331A6F611DF396000C9E384</string>
 											<string>6331AE6111E05C6400C9E384</string>
-											<string>6331AE9D11E05F2300C9E384</string>
-											<string>6331AED811E0634300C9E384</string>
-											<string>6331AED911E0634300C9E384</string>
-											<string>6331AEDA11E0634300C9E384</string>
-											<string>6331AEDB11E0634300C9E384</string>
-											<string>6331AEDC11E0634300C9E384</string>
+											<string>6331AEE011E0644E00C9E384</string>
+											<string>6331AEEB11E064A700C9E384</string>
+											<string>6331AEEC11E064A700C9E384</string>
+											<string>6331AEED11E064A700C9E384</string>
+											<string>6331AEEE11E064A700C9E384</string>
+											<string>6331AEEF11E064A700C9E384</string>
+											<string>6331AEF011E064A700C9E384</string>
+											<string>6331AEF111E064A700C9E384</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -461,9 +463,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>6331AE6611E05C6400C9E384</string>
+				<string>6331AEF311E064A700C9E384</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>6331AE6711E05C6400C9E384</string>
+				<string>6331AEF411E064A700C9E384</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
@@ -602,10 +604,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>6331AE8211E05D2100C9E384</string>
-		<string>6331AE7111E05C6400C9E384</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>63D314BB11DAADDB00AA7FA7</string>
 		<string>/Users/David/Development/GPS-Updater/GPS-Updater/GPS-Updater.xcodeproj</string>
 	</array>
@@ -631,7 +629,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GPSViewController.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -648,8 +646,6 @@
 							<string>343pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -689,7 +685,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>63D314BB11DAADDB00AA7FA7</string>
-				<string>6331AE6811E05C6400C9E384</string>
+				<string>6331AEF511E064A700C9E384</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
